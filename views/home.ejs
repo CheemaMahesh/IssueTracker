@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title><%=title%></title>
+    </head>
+    <body><h1>This is Home Page</h1></body>
+    <!-- <h2>Projects</h2> -->
+    <div class="Porject-c" id="project-i">
+        <form action="/create/projects" method="POST">
+            <input type="text" name="name" placeholder="enter-name"><br>
+            <textarea cols="30" rows="3" name="description" placeholder="write the project" ></textarea><br>
+            <input type="text" name="author" placeholder="Author">
+            <button> Submit</button>
+        </form>
+    </div>
+
+    <div class="p-display-c" id="p-display-i">
+        <ol>
+        <%for(let i of projects){%>
+            <a href="/project/details/<%=i._id%>" id="p-display-a-i">
+            <li><h3><%=i.name%></h3>
+                <p><%=i.description%></p>
+                <h4>------------<%=i.author%></h4>
+            </li>
+        </a>
+            <%}%>
+        </ol>
+    </div>
+</html>

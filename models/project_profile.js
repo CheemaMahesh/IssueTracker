@@ -13,7 +13,8 @@ const issueSchema=new mongoose.Schema({
     labels:[{
         type:String,
         required:true
-    }],author:{
+    }],
+    author:{
         type:String,
         required:true
     },

@@ -1,58 +1,11 @@
 <html>
     <head><title>  </title>
         <link rel="stylesheet" href="/css/project_details.css">
-
     </head>
     <body>
-        <div class="filters" id="filter-i">
-<div class="filter-by-labels">
-    <form  method="GET">
-        <label for="f-b-l">Filter with Labels</label><br>
-        <select name="labels" multiple required id="f-b-l">
-            <option value="Java">Java</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="HTML">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="Python">Python</option>
-            <option value="NodeJs">NodeJs</option>
-            <option value="ReactJs">ReactJs</option>
-            <option value="Express">Express</option>
-            <option value="Ruby">Ruby</option>
-            <option value="C++">C++</option>
-            <option value="PHP">PHP</option>
-            <option value="DSA">DSA</option>
-            <option value=".Net">.Net</option>
-            <option value="Database">Database</option>
-            <option value="MongoDB">MongoDB</option>
-            <option value="SQL">SQL</option>
-            <option value="Frontend">Front-End</option>
-            <option value="Backend">Back-End</option>
-            <option value="Front-End">Front-End</option>
-            <option value="EJS">EJS</option>
-            <option value="ManualAuthentication">ManualAuthentication</option>
-            <option value="Authentication">Authentication</option>
-          </select >
-          <button>Filter</button>
-    </form>
-</div>
-<div class="filter-by-author">
-    <form>
-        <label for="f-b-a">Filter with Author</label><br>
-        <input id="f-b-a" type="text" name="author" required> <button>Filter</button>
-    </form>
-</div>
-<div class="search-by-titleOr-description">
-    <form>
-        <label for="s-b-t">SearchByTitleOrDescription</label><br>
-        <input type="text" name="description" id="s-b-t" required>
-        <button>Search</button>
-
-    </form>
-</div>
-</div>
-
-        </div>
+   <!-- ==================================================================Main================================================ -->
         <div class="main">
+            <!-- ====================================================Display Project Details================================== -->
         <div id="project-display-id">
             <h3><%=details.name%></h3>
                 <p><%=details.description%></p>
@@ -71,6 +24,7 @@
                 </div>
         </div>
 
+<!-- ===============================================Form to create an Issue============================================================ -->
         <div class="issue-c" id="issue-i">
             <div class="dropdown">
                 <button class="dropbtn">Raise an Issue</button>

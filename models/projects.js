@@ -16,7 +16,11 @@ const projectSchema=new mongoose.Schema({
         type:String,
         required:true,
         unique:true
-    }
+    },
+    PP:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'ProjectProfile'
+    }]
 },{timestamps:true});
 
 

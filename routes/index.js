@@ -9,6 +9,7 @@ console.log("routes are loaded");
 router.get('/',homecontroller.home);
 router.use('/create',require('./projects'));
 router.use('/project',require('./project-details'));
+router.use('/generates',require('./issue'));
 
 //export router
 module.exports=router;

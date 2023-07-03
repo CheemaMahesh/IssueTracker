@@ -8,9 +8,12 @@ const db=require('./config/mongoose');
 
 // app.use(express.urlencoded({}));
 app.use(express.urlencoded(
-    {extended:true}
+    {extended:false}
 ));
 
+
+//static
+app.use(express.static('./assets'));
 
 
 //use ejs
@@ -29,4 +32,4 @@ app.listen(port,function(err){
     }
 
     console.log("Server is up and running on port:--",port);
-})
+});

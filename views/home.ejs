@@ -1,14 +1,15 @@
 <html>
     <head>
         <title><%=title%></title>
+        <link rel="stylesheet" href="/css/home.css">
     </head>
     <body><h1>This is Home Page</h1></body>
     <!-- <h2>Projects</h2> -->
     <div class="Porject-c" id="project-i">
         <form action="/create/projects" method="POST">
-            <input type="text" name="name" placeholder="enter-name"><br>
-            <textarea cols="30" rows="3" name="description" placeholder="write the project" ></textarea><br>
-            <input type="text" name="author" placeholder="Author">
+            <input type="text" name="name" placeholder="enter-name" required><br>
+            <textarea cols="30" rows="3" name="description" placeholder="write the project" required></textarea><br>
+            <input type="text" name="author" placeholder="Author" required>
             <button> Submit</button>
         </form>
     </div>

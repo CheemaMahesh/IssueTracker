@@ -6,9 +6,7 @@
     </head>
 
     <!-- ==============================================body============================================================ -->
-    <body><h1>This is Home Page</h1>
-
-
+    <body>
         <!-- ====================================main================================ -->
 
         <div class="mains" id="main">
@@ -16,7 +14,7 @@
     <div class="Porject-c" id="project-i">
         <form action="/create/projects" method="POST">
             <input type="text" name="name" placeholder="Project-Name" required>
-            <input cols="30" rows="3" name="description" required id="textarea" placeholder="Project........................">
+            <textarea cols="30" rows="3" name="description" required id="textarea" placeholder="Project........................"></textarea>
             <input type="text" name="author" placeholder="Author" required>
             <button> Create</button>
         </form>
@@ -26,9 +24,9 @@
         <ol>
         <%for(let i of projects){%>
             <a href="/project/details/<%=i._id%>" id="p-display-a-i">
-            <li><h3><%=i.name%></h3>
-                <p><%=i.description%></p>
-                <h4>------------<%=i.author%></h4>
+            <li><span><h3><b id="bbb"><%=i.name%></b></h3></span>
+                <div id="div"><p><%=i.description%></p></div>
+               <div id="divs"><b>------------<%=i.author%></b></div> 
             </li>
         </a>
             <%}%>

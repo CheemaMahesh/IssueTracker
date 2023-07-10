@@ -1,7 +1,7 @@
 ﻿# MyIssueTracker
 
 
-                                                               #IssueTracker
+                                                              **IssueTracker**
                                                                      |
                                                                      |
                                                                      |
@@ -26,7 +26,7 @@ css          js                    |                                       |
 
 
 
-#===================Setup Instructions============================#
+**#===================Setup Instructions============================#**
 
 To set up and run the project locally, follow these steps:
 
@@ -41,7 +41,7 @@ i.node index.js
 7.Open your web browser and visit http://localhost:8000 to access the IssueTracker application.
 
 
-#==============================Featues=================================#
+**#==============================Featues=================================#**
 1.Build a neat UI
 
 2.Home Page
@@ -67,3 +67,17 @@ i.node index.js
     *Description
     *Labels (multiple labels can be added to a project, IF a project has a label already show it (in dropdown) as the user types the label in)
     *Author
+
+
+
+
+**#=========================================Additional Notes================================**
+  *The project uses EJS templates for rendering dynamic content.
+  *CSS stylesheets are located in the assets/css directory.
+  *JavaScript files are located in the assets/js directory.
+  *The MongoDB connection URL is set to mongodb://127.0.0.1/issueTracker in the config/mongoose.js file. Update it as per your MongoDB configuration.
+  *The application is set to run on port 8000. You can change the port in the index.js file if required.
+  
+**Feel free to explore and modify the project to fit your requirements.**
+
+    

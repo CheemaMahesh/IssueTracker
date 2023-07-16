@@ -33,7 +33,10 @@ To set up and run the project locally, follow these steps:
 1.Clone the repository or download the source code.
 2.Navigate to the project directory.
 3.Install the dependencies by running the following command:
- i.npm install
+ i.npm init
+ ii.npm install express
+ iii.npm install express-ejs
+ vi.npm install mongoose
 4.Make sure you have MongoDB installed and running on your system.
 5.Update the MongoDB connection URL in the config/mongoose.js file if necessary.
 6.Start the application by running the following command:
@@ -69,11 +72,11 @@ i.node index.js
     *Author
 
 
-**===========================================#URLs#==========================================**
-    1.localhost:8000(home-page).(GET)
-    2.localhost:8000/create/project(POST)    :-to create a project
-    3.localhost:8000/project/details/:id (GET)   :-to render the project details page
-    4.localhost:8000/generates/issues (POST)   :-to create an issue
+**===========================================# URLs #==========================================**
+    1.http://localhost:8000 (home-page).(GET)
+    2.http://localhost:8000/create/project(POST)    :-to create a project
+    3.http://localhost:8000/project/details/:id (GET)   :-to render the project details page
+    4.http://localhost:8000/generates/issues (POST)   :-to create an issue
 
 **#=========================================Additional Notes================================**
   *The project uses EJS templates for rendering dynamic content.

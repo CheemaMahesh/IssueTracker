@@ -69,15 +69,22 @@ i.node index.js
     *Author
 
 
-
+**===========================================#URLs#==========================================**
+    1.localhost:8000(home-page).(GET)
+    2.localhost:8000/create/project(POST)    :-to create a project
+    3.localhost:8000/project/details/:id (GET)   :-to render the project details page
+    4.localhost:8000/generates/issues (POST)   :-to create an issue
 
 **#=========================================Additional Notes================================**
   *The project uses EJS templates for rendering dynamic content.
   *CSS stylesheets are located in the assets/css directory.
-  *JavaScript files are located in the assets/js directory.
   *The MongoDB connection URL is set to mongodb://127.0.0.1/issueTracker in the config/mongoose.js file. Update it as per your MongoDB configuration.
   *The application is set to run on port 8000. You can change the port in the index.js file if required.
+
   
 **Feel free to explore and modify the project to fit your requirements.**
+
+
+
 
     
